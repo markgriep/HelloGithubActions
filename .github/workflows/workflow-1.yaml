@@ -1,0 +1,34 @@
+name:					# this will appear on the actions page in github - optional - will display the path if you you don't put anything here
+
+on:						# Which event or what time will trigger this
+
+jobs:					# Collections of jobs
+  
+  Job1:
+
+    runs-on:		    # Where it's hosted, Can be self or github
+  
+    steps:			    # Sequence of action or commands
+    - Actions
+    - Commands
+  
+
+
+    Job2:
+    
+    
+    runs-on:
+
+
+
+# Notes
+
+# like Xml or JSON   Isn't normal written by machines
+
+# Key value pairs   Can use quotes but not requred
+
+# the key is always a string
+# the value can be object, coolectioion or 
+
+#  The indent hierarchy is defined with TWO SPACES
+#  DON'T use TABS to indent

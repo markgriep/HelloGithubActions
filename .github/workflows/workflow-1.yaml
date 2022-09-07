@@ -27,9 +27,9 @@ jobs:
     name: This is another job running on WINDOWS
     runs-on: windows-latest
     steps:
-      - run: dir
+      - run: Get-ComputerInfo | select WindowsProductName, WindowsVersion, OsHardwareAbstractionLayer
 
-      - run: ver
+      - run: systeminfo /fo csv | ConvertFrom-Csv | select OS*, System*, Hotfix* | Format-List
 
 
 

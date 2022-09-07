@@ -21,7 +21,19 @@ jobs:
 
       # Here is an echo of a context. Notice the dollar sign, and double curly braces
       - run: echo "context ${{github.event_name}}"
-      
+
+
+  Another-job:
+    name: This is another job running on WINDOWS
+    runs-on: windows-latest
+    steps:
+      - run: dir
+
+      - run: ver
+
+
+
+
 # Notes
 
 # like Xml or JSON   Isn't normal written by machines

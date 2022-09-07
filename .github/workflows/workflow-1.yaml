@@ -19,7 +19,8 @@ jobs:
       # run a linux command
       - run: pwd 
 
-
+      # Here is an echo of a context. Notice the dollar sign, and double curly braces
+      - run: echo "context ${{github.event_name}}"
       
 # Notes
 

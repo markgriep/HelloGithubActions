@@ -32,7 +32,8 @@ jobs:
       - run: systeminfo /fo csv | ConvertFrom-Csv | select OS*, System*, Hotfix* | Format-List
       
       - run: Get-EventLog -LogName System -Newest 5 
-
+      
+      - run: echo "editing the YAML file inside GitHub will show you a marketplace to the right.
 
 
 

@@ -30,6 +30,8 @@ jobs:
       - run: Get-ComputerInfo | select WindowsProductName, WindowsVersion, OsHardwareAbstractionLayer
 
       - run: systeminfo /fo csv | ConvertFrom-Csv | select OS*, System*, Hotfix* | Format-List
+      
+      - run: Get-EventLog -LogName System -Newest 5 
 
 
 
